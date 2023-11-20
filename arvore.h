@@ -6,7 +6,7 @@ typedef struct No{
 
 No* ab_no(int valor);
 void ab_inserir_no(No** raiz, int valor);
-void ab_remover_no(int valor);
+No* ab_remover_no(No* raiz, int valor);
 void ab_imprimir_em_ordem(No* raiz);
 
 

@@ -12,5 +12,10 @@ int main(){
 
     ab_imprimir_em_ordem(raiz);
 
+    ab_remover_no(raiz, 1);
+
+    ab_imprimir_em_ordem(raiz);
+
+
     return 0;
 }
