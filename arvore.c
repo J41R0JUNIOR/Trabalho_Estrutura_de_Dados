@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "arvore.h"
 
 No* ab_no(int valor){
@@ -59,11 +60,26 @@ No* ab_remover_no(No* raiz, int valor) {
     return raiz;
 }
 
-
 void ab_imprimir_em_ordem(No* raiz){
     if(raiz != NULL){
         ab_imprimir_em_ordem(raiz->no_esquerda);
         printf("%d ", raiz->valor);
         ab_imprimir_em_ordem(raiz->no_direita);
+    }
+}
+
+
+
+bool ab_busca_no(No* raiz, int valor) {
+    if (raiz == NULL) {
+        return false;
+    }
+
+    if (valor == raiz->valor) {
+        return true;
+    } else if (valor < raiz->valor) {
+        return ab_busca_no(raiz->no_esquerda, valor);
+    } else {
+        return ab_busca_no(raiz->no_direita, valor);
     }
 }
