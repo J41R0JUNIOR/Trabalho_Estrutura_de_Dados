@@ -24,7 +24,25 @@ int main(){
         printf("O nó com valor %d não foi encontrado na árvore.\n", valor);
     }
 
+    printf("Inordem: ");
+    ab_percurso_inordem(raiz);
+    printf("\n");
 
+    printf("Preordem: ");
+    ab_percurso_preordem(raiz);
+    printf("\n");
+
+    printf("Posordem: ");
+    ab_percurso_posordem(raiz);
+    printf("\n");
+
+    int minimo = ab_valor_minimo(raiz);
+    int maximo = ab_valor_maximo(raiz);
+
+    printf("Valor mínimo: %d\n", minimo);
+    printf("Valor máximo: %d\n", maximo);
+
+    ab_liberar_arvore(raiz);
 
     return 0;
 }
