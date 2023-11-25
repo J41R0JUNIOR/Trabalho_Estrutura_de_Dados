@@ -14,14 +14,15 @@ int main(){
     ab_imprimir_em_ordem(raiz);
 
     ab_remover_no(raiz, 1);
-
+    printf("\n");
     ab_imprimir_em_ordem(raiz);
+    printf("\n");
 
     int valor = 2;
     if (ab_busca_no(raiz, valor)) {
-        printf("O nó com valor %d foi encontrado na árvore.\n", valor);
+        printf("O noh com valor %d foi encontrado na arvore.\n", valor);
     } else {
-        printf("O nó com valor %d não foi encontrado na árvore.\n", valor);
+        printf("O noh com valor %d não foi encontrado na arvore.\n", valor);
     }
 
     printf("Inordem: ");
@@ -39,8 +40,8 @@ int main(){
     int minimo = ab_valor_minimo(raiz);
     int maximo = ab_valor_maximo(raiz);
 
-    printf("Valor mínimo: %d\n", minimo);
-    printf("Valor máximo: %d\n", maximo);
+    printf("Valor minimo: %d\n", minimo);
+    printf("Valor maximo: %d\n", maximo);
 
     ab_liberar_arvore(raiz);
 
