@@ -3,6 +3,16 @@
 #include <stdbool.h>
 #include "arvore.h"
 
+/*
+    Pessoas que participaram da produção do algoritmo:
+    -Joel Alves dos Santos (UC22102248)
+    -Ítalo Cezar Eugênio de Santana (UC22102126)
+    -Jairo Pereira de Sousa Júnior (UC22101494)
+    -Luís Henrique Souza Oliveira dos Santos (UC22101329)
+    -Mirelle Alves Sine (UC22101838)
+    -Gabriel Ribeiro Noronha (UC22101650)
+*/
+
 int main(){
 
     No* raiz = NULL;
